@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: #0d001a;
+  color: #e0d0ff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  background: #1a0033;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+  width: 90%;
+  max-width: 700px;
+  margin: 3rem auto;
+  text-align: center;
+  border: 2px solid #8a2be2;
+}
+
+h1 {
+  color: #bb86fc;
+  text-shadow: 0 0 15px #bb86fc;
+  margin-bottom: 0.5rem;
+}
+
+p { color: #b0a8ff; margin-bottom: 2rem; }
+
+button {
+  padding: 0.8rem 1.5rem;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #a855f7;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
+}
+
+.message-input {
+  display: flex;
+  gap: 12px;
+  margin: 2rem 0;
+}
+
+input {
+  flex: 1;
+  padding: 0.9rem;
+  background: #2a004d;
+  border: 2px solid #8a2be2;
+  border-radius: 12px;
+  color: #e0d0ff;
+  font-size: 1.1rem;
+}
+
+input::placeholder { color: #b0a8ff; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 450px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+li {
+  background: #2a004d;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  border-radius: 12px;
+  border-left: 5px solid #bb86fc;
+  word-wrap: break-word;
+}
+
+li strong { color: #bb86fc; }
+
+#msgCount { color: #bb86fc; font-weight: bold; }
+
+/* Прыгающие 👾 */
+#emojiRain {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+@keyframes fall {
+  to { transform: translateY(110vh); opacity: 0; }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>👾 Черно-фиолетовый Чат на Sepolia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👾 Блокчейн-чат 👾</h1>
+    <p>Пиши что угодно — сообщения навсегда в блокчейне</p>
+
+    <button id="connectBtn">Подключить MetaMask</button>
+
+    <div class="message-input">
+      <input id="messageInput" type="text" placeholder="Напиши сообщение..." maxlength="200">
+      <button id="sendBtn">Отправить 👾</button>
+    </div>
+
+    <h3>Сообщения (<span id="msgCount">0</span>):</h3>
+    <ul id="messagesList"></ul>
+  </div>
+
+  <!-- Прыгающие смайлики -->
+  <div id="emojiRain"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.11.0/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
